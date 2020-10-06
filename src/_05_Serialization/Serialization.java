@@ -1,10 +1,14 @@
 package _05_Serialization;
 
-import org.junit.Test;
+
 
 import java.io.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+
 
 /*
  * Serialization is the process of converting an object into a stream of bytes
@@ -20,7 +24,7 @@ import static org.junit.Assert.assertEquals;
 public class Serialization {
 	private static final String DATA_FILE = "src/_04_Serialization/saved.dat";
 
-	@Test
+//  @Test
 	public void test() {
 		String name = "Jeff";
 		int age = 32;

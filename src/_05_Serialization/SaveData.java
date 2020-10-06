@@ -11,4 +11,6 @@ public class SaveData {
 		this.name = name;
 		this.age = age;
 	}
+	
+	
 }

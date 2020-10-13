@@ -22,9 +22,9 @@ import org.junit.jupiter.api.Test;
  * Challenge: Complete the SaveData class so that the test passes.
  */
 public class Serialization {
-	private static final String DATA_FILE = "src/_04_Serialization/saved.dat";
+	private static final String DATA_FILE = "src/_05_Serialization/saved.dat";
 
-//  @Test
+@Test
 	public void test() {
 		String name = "Jeff";
 		int age = 32;
@@ -43,7 +43,7 @@ public class Serialization {
 	 * One simple way to save a serializable object to a file is using a FileOutputStream
 	 * and ObjectOutputStream.
 	 */
-	private static void save(SaveData data) {
+ static void save(SaveData data) {
 		try (FileOutputStream fos = new FileOutputStream(new File(DATA_FILE)); ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 			oos.writeObject(data);
 		} catch (IOException e) {
